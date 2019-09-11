@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_main_pool"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_pool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolBar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <Button
+            android:id="@+id/but_back_pool"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/back_arrow"
+            android:backgroundTint="@color/mainText"
+            android:translationX="-9dp" />
+
+        <TextView
+            android:id="@+id/text_bar_pool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="task name"
+            android:textColor="@color/mainText"/>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/layout_pool">
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

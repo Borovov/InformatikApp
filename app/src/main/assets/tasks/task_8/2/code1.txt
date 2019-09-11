@@ -1,0 +1,49 @@
+Бейсик:
+DIM S, N AS INTEGER
+ S = 0
+ N = 0
+ WHILE S < 111
+    S = S + 8
+    N = N + 2
+ WEND
+ PRINT N@Python:
+s = 0
+n = 0
+while s < 111:
+    s = s + 8
+    n = n + 2
+print(n)@Паскаль:
+var s, n: integer;
+begin
+    s := 0;
+    n := 0;
+    while s < 111 do
+    begin
+        s := s + 8;
+        n := n + 2
+    end;
+    writeln(n)
+end.@Алгоритмический язык:
+алг
+нач
+    цел n, s
+    n := 0
+    s := 0
+    нц пока s < 111
+        s := s + 8
+        n := n + 2
+    кц
+    вывод n
+кон@Си++:
+#include <iostream>
+using namespace std;
+int main()
+{ 
+	int s = 0, n = 0;
+	while (s < 111) 
+	{ 
+		s = s + 8; n = n + 2; 
+	}
+	cout << n << endl; 
+	return 0;
+}

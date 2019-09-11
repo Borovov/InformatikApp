@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolBar"
+        android:minHeight="?attr/actionBarSize" />
+
+    <TextView
+        android:id="@+id/textProf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:text="Статистика"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/mainText"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textProfVar"
+        android:layout_width="166dp"
+        android:layout_height="115dp"
+        android:layout_below="@+id/textProf"
+        android:layout_alignStart="@+id/textProf"
+        android:layout_alignLeft="@+id/textProf"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"
+        android:gravity="right"
+        android:text="Процент верно решённых заданий в билете"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/mainText"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textProfVarPer"
+        android:layout_width="wrap_content"
+        android:layout_height="123dp"
+        android:layout_alignTop="@+id/textProfVar"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/textProfVar"
+        android:layout_toRightOf="@+id/textProfVar"
+        android:gravity="left|bottom"
+        android:text="74%"
+        android:textColor="@color/mainText"
+        android:textSize="100sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="162dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/textProfVar"
+        android:layout_alignStart="@+id/textProfVar"
+        android:layout_alignLeft="@+id/textProfVar"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"
+        android:gravity="right|top"
+        android:text="Среднее время решения билета"
+        android:textColor="@color/mainText"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:gravity="left|bottom"
+        android:text="25 мин"
+        android:textColor="@color/mainText"
+        android:textSize="50sp" />
+
+</RelativeLayout>

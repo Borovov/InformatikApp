@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_pool"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mainBlue"
+        android:minHeight="?attr/actionBarSize" >
+
+        <Button
+            android:id="@+id/but_back_pool"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/back_arrow"
+            android:backgroundTint="@color/mainText"
+            android:translationX="-9dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="0dp" />
+
+        <TextView
+            android:id="@+id/text_bar_pool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Новый вариант"
+            android:textColor="@color/mainText"
+            android:textStyle="normal"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="0dp" />
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/layout_variant_pool">
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
